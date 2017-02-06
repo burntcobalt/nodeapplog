@@ -2,7 +2,7 @@
   "name": "nodeapplog",
   "version": "0.0.1",
   "description": "NCBI applog integration package",
-  "main": "index.js",
+  "main": "nodeapplog.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/burntcobalt/nodeapplog/issues"
   },
-  "homepage": "https://github.com/burntcobalt/nodeapplog#readme"
+  "homepage": "https://github.com/burntcobalt/nodeapplog#readme",
+  "dependencies": {
+    "ffi": "^2.2.0",
+    "ref": "^1.3.4",
+    "ref-array": "^1.2.0",
+    "ref-struct": "^1.1.0"
+  }
 }
