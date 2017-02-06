@@ -35,7 +35,7 @@ var SNcbiLog_ParamPtr = ref.refType(SNcbiLog_Param);
 
 var StringArray = ArrayType('string');
 
-module.exports = ffi.Library('./build/Release/clog', {
+module.exports = ffi.Library(__dirname+'/build/Release/clog', {
     'NcbiLog_InitST': [ 'void', [ 'string' ] ],
     'NcbiLog_Destroy': [ 'void', [ 'void' ] ],
     'NcbiLog_InitMT': [ 'void', ['string']],

@@ -1,6 +1,6 @@
 {
   "name": "nodeapplog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NCBI applog integration package",
   "main": "nodeapplog.js",
   "scripts": {
