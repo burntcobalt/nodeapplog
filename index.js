@@ -1,16 +1,15 @@
 var clog = require('./nodeapplog');
 
-clog.NcbiLog_InitST("firstapp");
-// NcbiLog_AppStart([""]);
-clog.NcbiLog_AppRun("");
-// clog.NcbiLog_ReqStart("");
-clog.NcbiLog_ReqRun("");
+clog.api.NcbiLog_InitST("firstapp");
+clog.api.NcbiLog_AppStart(process.argv0);
+clog.api.NcbiLog_AppRun("");
+clog.api.NcbiLogShim_ReqStart(["startkey"],["startval"],1);
+clog.api.NcbiLog_ReqRun("");
 
-console.log(clog.NcbiLog_GetHostName(""));
+console.log(clog.api.NcbiLog_GetHostName(""));
 
-// myparam = new SNcbiLog_Param;  ArrayType
-
-clog.NcbiLog_Critical("critical error");
-clog.NcbiLog_ReqStop(0,0,0);
-clog.NcbiLog_AppStop(0);
-clog.NcbiLog_Destroy("");
+clog.api.NcbiLogShim_Extra(["mykey","myval"],["myval","myval2"],2);
+clog.api.NcbiLog_Critical("my critical error");
+clog.api.NcbiLog_ReqStop(0,0,0);
+clog.api.NcbiLog_AppStop(0);
+clog.api.NcbiLog_Destroy("");
