@@ -1,3 +1,3 @@
 # nodeapplog
 
-binding from node.js to ncbi's applog c library
+node.js binding to NCBI's c applog library (clog)
